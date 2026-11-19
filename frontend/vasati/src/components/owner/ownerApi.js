@@ -81,3 +81,4 @@ export const ownerApi = {
   markNotificationRead: (id) => axios.put(`${API_BASE}/notifications/${id}/read`, {}, getAuthHeaders()),
   getAuditLogs: () => axios.get(`${API_BASE}/audit-logs`, getAuthHeaders()),
 };
+

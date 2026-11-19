@@ -618,3 +618,4 @@ function CustomerProfileModal({ customerId, onClose, onRefresh }) {
 }
 
 export default CustomerProfileModal;
+

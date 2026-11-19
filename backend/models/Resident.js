@@ -50,3 +50,4 @@ residentSchema.methods.getMaskedPhone = function () {
 };
 
 module.exports = mongoose.model("Resident", residentSchema);
+

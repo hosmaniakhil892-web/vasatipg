@@ -67,3 +67,4 @@ async function authOwner(req, res, next) {
 }
 
 module.exports = { authOwner, SECRET_KEY };
+
