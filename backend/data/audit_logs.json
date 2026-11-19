@@ -1,5 +1,42 @@
 [
   {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_1795104609915",
+    "propertyId": null,
+    "performedBy": "nbcgj@gmail.com",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T16:12:01.107Z"
+  },
+  {
+    "action": "OTP_VERIFIED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104609915",
+    "propertyId": null,
+    "performedBy": "nbcgj@gmail.com",
+    "userRole": "owner",
+    "details": {
+      "mobileNumber": "9855623300"
+    },
+    "timestamp": "2026-11-19T16:10:11.863Z"
+  },
+  {
+    "action": "OWNER_REGISTERED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104609915",
+    "propertyId": null,
+    "performedBy": "nbcgj@gmail.com",
+    "userRole": "owner",
+    "details": {
+      "propertyName": " ghdhm",
+      "propertyAddress": "gcmhgj"
+    },
+    "timestamp": "2026-11-19T16:10:09.918Z"
+  },
+  {
     "action": "RECORD_VERIFIED_PAYMENT",
     "entityType": "Payment",
     "entityId": "PAY-9011",

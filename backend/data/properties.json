@@ -144,5 +144,33 @@
     "totalBeds": 8,
     "occupiedBeds": 0,
     "availableBeds": 8
+  },
+  {
+    "_id": "prop_1795104609915",
+    "pgName": " ghdhm",
+    "price": "8500",
+    "gender": "Unisex",
+    "amenities": [
+      "WiFi",
+      "Geyser",
+      "Washing Machine",
+      "Housekeeping",
+      "Power Backup"
+    ],
+    "occupancy": "Single, Double, Triple",
+    "description": "Newly registered property  ghdhm located at gcmhgj. Fully furnished with high-speed internet, CCTV security and clean environment.",
+    "latitude": 12.9352,
+    "longitude": 77.6245,
+    "locationName": "gcmhgj",
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "nbcgj@gmail.com",
+    "status": "active",
+    "totalRooms": 4,
+    "totalBeds": 8,
+    "occupiedBeds": 0,
+    "availableBeds": 8
   }
 ]

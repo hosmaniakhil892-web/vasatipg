@@ -115,5 +115,34 @@
     "role": "owner",
     "createdAt": "2026-11-19T16:04:10.335Z",
     "lastLogin": null
+  },
+  {
+    "_id": "owner_1795104609915",
+    "fullName": "fhghfjh",
+    "email": "nbcgj@gmail.com",
+    "password": "$2a$10$Q/3I.D.hni4as4oHiW5aVO4k8fLDWeSQ992qWTqP83xoN.beGGmBq",
+    "mobileNumber": "9855623300",
+    "isMobileVerified": true,
+    "otpCode": null,
+    "propertyName": " ghdhm",
+    "propertyAddress": "gcmhgj",
+    "identityProof": {
+      "docType": "Aadhaar",
+      "docNumber": "343435435434",
+      "docFile": "aadhaar_sample.pdf"
+    },
+    "ownershipProof": {
+      "docType": "Electricity Bill",
+      "docNumber": "EB-2026-9912",
+      "docFile": "ebill_sample.pdf"
+    },
+    "verificationStatus": "Verified",
+    "rejectionReason": null,
+    "registeredProperties": [
+      "prop_1795104609915"
+    ],
+    "role": "owner",
+    "createdAt": "2026-11-19T16:10:09.915Z",
+    "lastLogin": null
   }
 ]

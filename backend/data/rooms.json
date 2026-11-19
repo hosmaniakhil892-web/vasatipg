@@ -392,5 +392,65 @@
       }
     ],
     "createdAt": "2026-11-19T16:04:10.340Z"
+  },
+  {
+    "_id": "room_1795104609917_101",
+    "propertyId": "prop_1795104609915",
+    "roomNumber": "101",
+    "floor": 1,
+    "sharingType": "Single",
+    "totalBeds": 1,
+    "availableBeds": 1,
+    "occupiedBeds": 0,
+    "monthlyRent": 12000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "WiFi",
+      "Attached Washroom",
+      "AC"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "101-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:10:09.917Z"
+  },
+  {
+    "_id": "room_1795104609917_102",
+    "propertyId": "prop_1795104609915",
+    "roomNumber": "102",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 2,
+    "occupiedBeds": 0,
+    "monthlyRent": 8500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "WiFi",
+      "Geyser",
+      "Attached Washroom"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "102-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      },
+      {
+        "bedNumber": "102-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:10:09.917Z"
   }
 ]
