@@ -1,0 +1,338 @@
+[
+  {
+    "action": "RECORD_VERIFIED_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "PAY-9011",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma",
+      "amount": 14000,
+      "paymentMethod": "UPI",
+      "transactionRef": "UPI/VERIFY-STEP-10/HDFC",
+      "receiptNumber": "REC-2026-1011"
+    },
+    "timestamp": "2026-11-19T16:04:10.693Z"
+  },
+  {
+    "action": "REALLOCATE_ROOM",
+    "entityType": "Customer",
+    "entityId": "CUST-1049",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "from": {
+        "room": "101",
+        "bed": "101-A"
+      },
+      "to": {
+        "room": "101",
+        "bed": "101-A"
+      }
+    },
+    "timestamp": "2026-11-19T16:04:10.685Z"
+  },
+  {
+    "action": "VIEW_CUSTOMER_PROFILE",
+    "entityType": "Customer",
+    "entityId": "CUST-1049",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma"
+    },
+    "timestamp": "2026-11-19T16:04:10.668Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_001",
+    "propertyId": null,
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T16:04:10.653Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_1795104250335",
+    "propertyId": null,
+    "performedBy": "newowner_1795104250150@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T16:04:10.501Z"
+  },
+  {
+    "action": "OTP_VERIFIED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104250335",
+    "propertyId": null,
+    "performedBy": "newowner_1795104250150@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "mobileNumber": "9845099887"
+    },
+    "timestamp": "2026-11-19T16:04:10.366Z"
+  },
+  {
+    "action": "OWNER_REGISTERED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104250335",
+    "propertyId": null,
+    "performedBy": "newowner_1795104250150@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "propertyName": "Vasati Green View Residency",
+      "propertyAddress": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru"
+    },
+    "timestamp": "2026-11-19T16:04:10.342Z"
+  },
+  {
+    "action": "RECORD_VERIFIED_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "PAY-9010",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma",
+      "amount": 14000,
+      "paymentMethod": "UPI",
+      "transactionRef": "UPI/VERIFY-STEP-10/HDFC",
+      "receiptNumber": "REC-2026-1010"
+    },
+    "timestamp": "2026-11-19T16:03:16.148Z"
+  },
+  {
+    "action": "REALLOCATE_ROOM",
+    "entityType": "Customer",
+    "entityId": "CUST-1049",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "from": {
+        "room": "101",
+        "bed": "101-A"
+      },
+      "to": {
+        "room": "101",
+        "bed": "101-A"
+      }
+    },
+    "timestamp": "2026-11-19T16:03:16.138Z"
+  },
+  {
+    "action": "VIEW_CUSTOMER_PROFILE",
+    "entityType": "Customer",
+    "entityId": "CUST-1049",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma"
+    },
+    "timestamp": "2026-11-19T16:03:16.122Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_001",
+    "propertyId": null,
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T16:03:16.110Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_1795104195769",
+    "propertyId": null,
+    "performedBy": "newowner_1795104195582@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T16:03:15.959Z"
+  },
+  {
+    "action": "OTP_VERIFIED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104195769",
+    "propertyId": null,
+    "performedBy": "newowner_1795104195582@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "mobileNumber": "9845099887"
+    },
+    "timestamp": "2026-11-19T16:03:15.796Z"
+  },
+  {
+    "action": "OWNER_REGISTERED",
+    "entityType": "Owner",
+    "entityId": "owner_1795104195769",
+    "propertyId": null,
+    "performedBy": "newowner_1795104195582@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "propertyName": "Vasati Green View Residency",
+      "propertyAddress": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru"
+    },
+    "timestamp": "2026-11-19T16:03:15.773Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_002",
+    "propertyId": null,
+    "performedBy": "suresh.pg@vasati.in",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T15:54:20.810Z"
+  },
+  {
+    "action": "RESPOND_COMPLAINT",
+    "entityType": "Complaint",
+    "entityId": "CMP-4011",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "status": "Resolved",
+      "ownerResponse": "Issue investigated and resolved promptly.",
+      "resolutionNotes": "Verified."
+    },
+    "timestamp": "2026-11-19T15:54:20.674Z"
+  },
+  {
+    "action": "UPDATE_VISIT_STATUS",
+    "entityType": "Visit",
+    "entityId": "VIS-10492",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "status": "Accepted",
+      "ownerNotes": "Confirmed for tour"
+    },
+    "timestamp": "2026-11-19T15:54:20.657Z"
+  },
+  {
+    "action": "RECORD_VERIFIED_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "PAY-9009",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma",
+      "amount": 9500,
+      "paymentMethod": "UPI",
+      "transactionRef": "UPI/TEST-UTR-998811",
+      "receiptNumber": "REC-2026-1009"
+    },
+    "timestamp": "2026-11-19T15:54:20.643Z"
+  },
+  {
+    "action": "ACCEPT_BOOKING",
+    "entityType": "Booking",
+    "entityId": "BK-8021",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Harish Gowda",
+      "roomNumber": "103",
+      "bedNumber": "103-B"
+    },
+    "timestamp": "2026-11-19T15:54:20.634Z"
+  },
+  {
+    "action": "VIEW_CUSTOMER_PROFILE",
+    "entityType": "Customer",
+    "entityId": "CUST-1049",
+    "propertyId": "prop_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Arjun Verma"
+    },
+    "timestamp": "2026-11-19T15:54:20.618Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_001",
+    "propertyId": null,
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "ip": "::1"
+    },
+    "timestamp": "2026-11-19T15:54:20.574Z"
+  },
+  {
+    "action": "OWNER_LOGIN",
+    "entityType": "Owner",
+    "entityId": "owner_001",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "ip": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 Chrome/120.0"
+    },
+    "timestamp": "2026-11-19T15:50:54.612Z"
+  },
+  {
+    "action": "RECORD_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "PAY-9011",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "amount": 14000,
+      "customerId": "CUST-1049",
+      "method": "UPI",
+      "txnRef": "UPI/330918239012/HDFC"
+    },
+    "timestamp": "2026-11-03T11:20:00.000Z"
+  },
+  {
+    "action": "CONFIRM_BOOKING",
+    "entityType": "Booking",
+    "entityId": "BK-8019",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "customerName": "Ananya Sen",
+      "roomNumber": "202",
+      "bedNumber": "202-B"
+    },
+    "timestamp": "2026-11-15T11:10:00.000Z"
+  },
+  {
+    "action": "UPDATE_COMPLAINT_STATUS",
+    "entityType": "Complaint",
+    "entityId": "CMP-4009",
+    "performedBy": "owner@vasatipg.com",
+    "userRole": "owner",
+    "details": {
+      "status": "Resolved",
+      "notes": "Replaced heating element."
+    },
+    "timestamp": "2026-11-16T15:30:00.000Z"
+  }
+]

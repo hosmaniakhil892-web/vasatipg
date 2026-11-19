@@ -1,0 +1,119 @@
+[
+  {
+    "_id": "owner_001",
+    "fullName": "Rajesh Kulkarni",
+    "email": "owner@vasatipg.com",
+    "password": "$2a$10$/cy9OvHj2OhOxwGY06V4auJwaNiDXSbhgvbbuFtLNWh1epznKXwfu",
+    "mobileNumber": "9845012345",
+    "isMobileVerified": true,
+    "otpCode": null,
+    "propertyName": "Vasati Royal Executive PG & Co-Living",
+    "propertyAddress": "14/2, 5th Cross, Koramangala 4th Block, Bengaluru, Karnataka 560034",
+    "identityProof": {
+      "docType": "Aadhaar",
+      "docNumber": "9823 4512 8765",
+      "docFile": "aadhaar_rajesh.pdf"
+    },
+    "ownershipProof": {
+      "docType": "Property Deed",
+      "docNumber": "BLR-KOR-2023-889",
+      "docFile": "deed_koramangala.pdf"
+    },
+    "verificationStatus": "Verified",
+    "rejectionReason": null,
+    "registeredProperties": [
+      "prop_001",
+      "prop_002"
+    ],
+    "role": "owner",
+    "createdAt": "2026-01-15T10:00:00.000Z",
+    "lastLogin": "2026-11-19T15:50:54.609Z"
+  },
+  {
+    "_id": "owner_002",
+    "fullName": "Suresh Sharma",
+    "email": "suresh.pg@vasati.in",
+    "password": "$2a$10$/cy9OvHj2OhOxwGY06V4auJwaNiDXSbhgvbbuFtLNWh1epznKXwfu",
+    "mobileNumber": "9876543210",
+    "isMobileVerified": true,
+    "otpCode": null,
+    "propertyName": "Vasati Sunshine Luxury PG",
+    "propertyAddress": "88, Silicon Oasis Layout, HSR Layout Sector 2, Bengaluru, Karnataka 560102",
+    "identityProof": {
+      "docType": "PAN",
+      "docNumber": "ABCPS1234E",
+      "docFile": "pan_suresh.pdf"
+    },
+    "ownershipProof": {
+      "docType": "Rental Agreement",
+      "docNumber": "HSR-AGR-2024-112",
+      "docFile": "agreement_hsr.pdf"
+    },
+    "verificationStatus": "Verified",
+    "rejectionReason": null,
+    "registeredProperties": [
+      "prop_003"
+    ],
+    "role": "owner",
+    "createdAt": "2026-02-10T11:00:00.000Z",
+    "lastLogin": "2026-11-19T15:50:54.612Z"
+  },
+  {
+    "_id": "owner_1795104195769",
+    "fullName": "Mahesh Pattar",
+    "email": "newowner_1795104195582@vasati.in",
+    "password": "$2a$10$6ukAeAGPRqwv9fOxctX6I.H0unp.WGYbel9NORtjsRTENY8727DEW",
+    "mobileNumber": "9845099887",
+    "isMobileVerified": true,
+    "otpCode": null,
+    "propertyName": "Vasati Green View Residency",
+    "propertyAddress": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru",
+    "identityProof": {
+      "docType": "Aadhaar",
+      "docNumber": "9912-3819-4820",
+      "docFile": "aadhaar.pdf"
+    },
+    "ownershipProof": {
+      "docType": "Electricity Bill",
+      "docNumber": "BESCOM-19284",
+      "docFile": "ebill.pdf"
+    },
+    "verificationStatus": "Verified",
+    "rejectionReason": null,
+    "registeredProperties": [
+      "prop_1795104195769"
+    ],
+    "role": "owner",
+    "createdAt": "2026-11-19T16:03:15.769Z",
+    "lastLogin": null
+  },
+  {
+    "_id": "owner_1795104250335",
+    "fullName": "Mahesh Pattar",
+    "email": "newowner_1795104250150@vasati.in",
+    "password": "$2a$10$15JxR4OeDKqHh2rBG9U2muM.wFVenBl8VfPzMMUS8wsfOZbwBMDoe",
+    "mobileNumber": "9845099887",
+    "isMobileVerified": true,
+    "otpCode": null,
+    "propertyName": "Vasati Green View Residency",
+    "propertyAddress": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru",
+    "identityProof": {
+      "docType": "Aadhaar",
+      "docNumber": "9912-3819-4820",
+      "docFile": "aadhaar.pdf"
+    },
+    "ownershipProof": {
+      "docType": "Electricity Bill",
+      "docNumber": "BESCOM-19284",
+      "docFile": "ebill.pdf"
+    },
+    "verificationStatus": "Verified",
+    "rejectionReason": null,
+    "registeredProperties": [
+      "prop_1795104250336"
+    ],
+    "role": "owner",
+    "createdAt": "2026-11-19T16:04:10.335Z",
+    "lastLogin": null
+  }
+]

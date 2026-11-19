@@ -1,0 +1,396 @@
+[
+  {
+    "_id": "room_101",
+    "propertyId": "prop_001",
+    "roomNumber": "101",
+    "floor": 1,
+    "sharingType": "Single",
+    "totalBeds": 1,
+    "availableBeds": 0,
+    "occupiedBeds": 1,
+    "monthlyRent": 14000,
+    "securityDeposit": 20000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Attached Washroom",
+      "Study Table",
+      "Balcony"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "101-A",
+        "status": "Occupied",
+        "residentId": "res_001",
+        "residentName": "Arjun Verma"
+      }
+    ]
+  },
+  {
+    "_id": "room_102",
+    "propertyId": "prop_001",
+    "roomNumber": "102",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 0,
+    "occupiedBeds": 2,
+    "monthlyRent": 9500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Attached Washroom",
+      "Cupboards"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "102-A",
+        "status": "Occupied",
+        "residentId": "res_002",
+        "residentName": "Pooja Hegde"
+      },
+      {
+        "bedNumber": "102-B",
+        "status": "Occupied",
+        "residentId": "res_003",
+        "residentName": "Sneha Reddy"
+      }
+    ]
+  },
+  {
+    "_id": "room_103",
+    "propertyId": "prop_001",
+    "roomNumber": "103",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 0,
+    "occupiedBeds": 2,
+    "monthlyRent": 9500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "WiFi",
+      "Attached Washroom",
+      "Geyser"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "103-A",
+        "status": "Occupied",
+        "residentId": "res_004",
+        "residentName": "Vikram Malhotra"
+      },
+      {
+        "bedNumber": "103-B",
+        "status": "Reserved",
+        "residentId": null,
+        "residentName": "Harish Gowda"
+      }
+    ]
+  },
+  {
+    "_id": "room_201",
+    "propertyId": "prop_001",
+    "roomNumber": "201",
+    "floor": 2,
+    "sharingType": "Triple",
+    "totalBeds": 3,
+    "availableBeds": 1,
+    "occupiedBeds": 2,
+    "monthlyRent": 7500,
+    "securityDeposit": 12000,
+    "facilities": [
+      "WiFi",
+      "Balcony",
+      "Geyser",
+      "Storage"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "201-A",
+        "status": "Occupied",
+        "residentId": "res_005",
+        "residentName": "Rohan Deshmukh"
+      },
+      {
+        "bedNumber": "201-B",
+        "status": "Occupied",
+        "residentId": "res_006",
+        "residentName": "Karthik Nair"
+      },
+      {
+        "bedNumber": "201-C",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ]
+  },
+  {
+    "_id": "room_202",
+    "propertyId": "prop_001",
+    "roomNumber": "202",
+    "floor": 2,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 1,
+    "occupiedBeds": 1,
+    "monthlyRent": 9500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Geyser"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "202-A",
+        "status": "Occupied",
+        "residentId": "res_007",
+        "residentName": "Aditi Rao"
+      },
+      {
+        "bedNumber": "202-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ]
+  },
+  {
+    "_id": "room_301",
+    "propertyId": "prop_001",
+    "roomNumber": "301",
+    "floor": 3,
+    "sharingType": "Single",
+    "totalBeds": 2,
+    "availableBeds": 1,
+    "occupiedBeds": 1,
+    "monthlyRent": 13000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Private Balcony",
+      "Attached Bath"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80"
+    ],
+    "beds": [
+      {
+        "bedNumber": "301-A",
+        "status": "Occupied",
+        "residentId": "res_008",
+        "residentName": "Manoj Kumar"
+      },
+      {
+        "bedNumber": "301-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ]
+  },
+  {
+    "_id": "room_p2_101",
+    "propertyId": "prop_002",
+    "roomNumber": "101",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 0,
+    "occupiedBeds": 2,
+    "monthlyRent": 11000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Attached Washroom",
+      "TV"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "101-A",
+        "status": "Occupied",
+        "residentId": "res_p2_001",
+        "residentName": "Sunil Joshi"
+      },
+      {
+        "bedNumber": "101-B",
+        "status": "Occupied",
+        "residentId": "res_p2_002",
+        "residentName": "Nikhil Patil"
+      }
+    ]
+  },
+  {
+    "_id": "room_p2_102",
+    "propertyId": "prop_002",
+    "roomNumber": "102",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 1,
+    "occupiedBeds": 1,
+    "monthlyRent": 11000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "AC",
+      "WiFi",
+      "Attached Washroom"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "102-A",
+        "status": "Occupied",
+        "residentId": "res_p2_003",
+        "residentName": "Tanmay Bhat"
+      },
+      {
+        "bedNumber": "102-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ]
+  },
+  {
+    "_id": "room_1795104195771_101",
+    "propertyId": "prop_1795104195769",
+    "roomNumber": "101",
+    "floor": 1,
+    "sharingType": "Single",
+    "totalBeds": 1,
+    "availableBeds": 1,
+    "occupiedBeds": 0,
+    "monthlyRent": 12000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "WiFi",
+      "Attached Washroom",
+      "AC"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "101-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:03:15.771Z"
+  },
+  {
+    "_id": "room_1795104195771_102",
+    "propertyId": "prop_1795104195769",
+    "roomNumber": "102",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 2,
+    "occupiedBeds": 0,
+    "monthlyRent": 8500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "WiFi",
+      "Geyser",
+      "Attached Washroom"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "102-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      },
+      {
+        "bedNumber": "102-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:03:15.771Z"
+  },
+  {
+    "_id": "room_1795104250340_101",
+    "propertyId": "prop_1795104250336",
+    "roomNumber": "101",
+    "floor": 1,
+    "sharingType": "Single",
+    "totalBeds": 1,
+    "availableBeds": 1,
+    "occupiedBeds": 0,
+    "monthlyRent": 12000,
+    "securityDeposit": 18000,
+    "facilities": [
+      "WiFi",
+      "Attached Washroom",
+      "AC"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "101-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:04:10.340Z"
+  },
+  {
+    "_id": "room_1795104250340_102",
+    "propertyId": "prop_1795104250336",
+    "roomNumber": "102",
+    "floor": 1,
+    "sharingType": "Double",
+    "totalBeds": 2,
+    "availableBeds": 2,
+    "occupiedBeds": 0,
+    "monthlyRent": 8500,
+    "securityDeposit": 15000,
+    "facilities": [
+      "WiFi",
+      "Geyser",
+      "Attached Washroom"
+    ],
+    "images": [],
+    "beds": [
+      {
+        "bedNumber": "102-A",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      },
+      {
+        "bedNumber": "102-B",
+        "status": "Available",
+        "residentId": null,
+        "residentName": null
+      }
+    ],
+    "createdAt": "2026-11-19T16:04:10.340Z"
+  }
+]

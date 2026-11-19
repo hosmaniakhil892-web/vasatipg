@@ -116,6 +116,15 @@ function Navbar() {
                 <FaAd className="nav-icon" /> Advertise
               </Link>
             </li>
+            <li>
+              <Link
+                to="/owner/dashboard"
+                onClick={() => setMenuOpen(false)}
+                style={{ color: "#5B0BB5", fontWeight: "600" }}
+              >
+                Owner Portal
+              </Link>
+            </li>
             {isLoggedIn ? (
               <>
                 <li className="spe-li">
@@ -144,6 +153,27 @@ function Navbar() {
         </div>
 
         <div className="second">
+          <button
+            type="button"
+            className="owner-nav-btn"
+            style={{
+              border: "1px solid #7200D9",
+              color: "#5B0BB5",
+              fontWeight: "600",
+              backgroundColor: "#FAF7FF",
+              borderRadius: "4px",
+              padding: "4px 10px",
+              height: "4vh",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              marginRight: "1vw",
+              fontSize: "0.85rem",
+            }}
+            onClick={() => navigate("/owner/dashboard")}
+          >
+            Owner Portal
+          </button>
           <button className="ad" onClick={() => navigate("/advertise")}>
             <FaAd className="nav-icon" /> Advertise
           </button>

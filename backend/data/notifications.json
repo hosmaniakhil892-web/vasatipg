@@ -1,0 +1,42 @@
+[
+  {
+    "id": "notif_001",
+    "recipientEmail": "owner@vasatipg.com",
+    "title": "New Booking Enquiry",
+    "message": "Harish Gowda requested a Double Sharing room at Vasati Royal Executive PG.",
+    "category": "booking",
+    "read": false,
+    "link": "/owner/bookings",
+    "createdAt": "2026-11-18T14:20:00.000Z"
+  },
+  {
+    "id": "notif_002",
+    "recipientEmail": "owner@vasatipg.com",
+    "title": "Upcoming Visit Tomorrow",
+    "message": "Naveen Reddy scheduled a physical property visit for Nov 20 at 11:30 AM.",
+    "category": "visit",
+    "read": false,
+    "link": "/owner/visits",
+    "createdAt": "2026-11-18T10:00:00.000Z"
+  },
+  {
+    "id": "notif_003",
+    "recipientEmail": "owner@vasatipg.com",
+    "title": "New Complaint Logged",
+    "message": "Pooja Hegde reported an Internet speed fluctuation in Room 102.",
+    "category": "complaint",
+    "read": false,
+    "link": "/owner/complaints",
+    "createdAt": "2026-11-17T20:15:00.000Z"
+  },
+  {
+    "id": "notif_004",
+    "recipientEmail": "owner@vasatipg.com",
+    "title": "Overdue Rent Alert",
+    "message": "Vikram Malhotra's rent of ₹9,500 is overdue by 14 days.",
+    "category": "payment",
+    "read": true,
+    "link": "/owner/payments",
+    "createdAt": "2026-11-10T09:00:00.000Z"
+  }
+]

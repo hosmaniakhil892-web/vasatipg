@@ -1,0 +1,148 @@
+[
+  {
+    "_id": "prop_001",
+    "pgName": "Vasati Royal Executive PG & Co-Living",
+    "price": "9500",
+    "gender": "Unisex",
+    "amenities": [
+      "AC",
+      "WiFi",
+      "Washing Machine",
+      "Geyser",
+      "Gym",
+      "Fridge",
+      "Power Backup",
+      "Housekeeping"
+    ],
+    "occupancy": "Single, Double, Triple",
+    "description": "Premium co-living facility located in Koramangala 4th Block with high-speed 300Mbps fiber WiFi, 3 times nutritious food, biometric security, air-conditioned rooms, and dedicated study zones.",
+    "latitude": 12.9345,
+    "longitude": 77.6265,
+    "locationName": "Koramangala 4th Block, Bengaluru",
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "owner@vasatipg.com",
+    "status": "active",
+    "totalRooms": 6,
+    "totalBeds": 12,
+    "occupiedBeds": 8,
+    "availableBeds": 4
+  },
+  {
+    "_id": "prop_002",
+    "pgName": "Vasati Premium Heights Men's PG",
+    "price": "11000",
+    "gender": "Male",
+    "amenities": [
+      "AC",
+      "WiFi",
+      "Geyser",
+      "Gym",
+      "TV",
+      "Biometric Access",
+      "Food 3 Times"
+    ],
+    "occupancy": "Single, Double",
+    "description": "Executive Men's PG in prime Indiranagar near 100ft road and metro station. Ideal for tech professionals and startup founders with modern amenities and calm atmosphere.",
+    "latitude": 12.9784,
+    "longitude": 77.6408,
+    "locationName": "Indiranagar 100ft Road, Bengaluru",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "owner@vasatipg.com",
+    "status": "active",
+    "totalRooms": 4,
+    "totalBeds": 8,
+    "occupiedBeds": 6,
+    "availableBeds": 2
+  },
+  {
+    "_id": "prop_003",
+    "pgName": "Vasati Sunshine Luxury PG",
+    "price": "8500",
+    "gender": "Female",
+    "amenities": [
+      "WiFi",
+      "Geyser",
+      "Washing Machine",
+      "Security Guard",
+      "CCTV",
+      "Fridge"
+    ],
+    "occupancy": "Double, Triple",
+    "description": "Safe, secure and peaceful Women's PG in HSR Layout Sector 2 with full surveillance, 24/7 security guard, biometric entry, and clean hygienic South & North Indian food.",
+    "latitude": 12.9121,
+    "longitude": 77.6446,
+    "locationName": "HSR Layout Sector 2, Bengaluru",
+    "images": [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "suresh.pg@vasati.in",
+    "status": "active",
+    "totalRooms": 5,
+    "totalBeds": 10,
+    "occupiedBeds": 7,
+    "availableBeds": 3
+  },
+  {
+    "_id": "prop_1795104195769",
+    "pgName": "Vasati Green View Residency",
+    "price": "8500",
+    "gender": "Unisex",
+    "amenities": [
+      "WiFi",
+      "Geyser",
+      "Washing Machine",
+      "Housekeeping",
+      "Power Backup"
+    ],
+    "occupancy": "Single, Double, Triple",
+    "description": "Newly registered property Vasati Green View Residency located at Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru. Fully furnished with high-speed internet, CCTV security and clean environment.",
+    "latitude": 12.9352,
+    "longitude": 77.6245,
+    "locationName": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru",
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "newowner_1795104195582@vasati.in",
+    "status": "active",
+    "totalRooms": 4,
+    "totalBeds": 8,
+    "occupiedBeds": 0,
+    "availableBeds": 8
+  },
+  {
+    "_id": "prop_1795104250336",
+    "pgName": "Vasati Green View Residency",
+    "price": "8500",
+    "gender": "Unisex",
+    "amenities": [
+      "WiFi",
+      "Geyser",
+      "Washing Machine",
+      "Housekeeping",
+      "Power Backup"
+    ],
+    "occupancy": "Single, Double, Triple",
+    "description": "Newly registered property Vasati Green View Residency located at Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru. Fully furnished with high-speed internet, CCTV security and clean environment.",
+    "latitude": 12.9352,
+    "longitude": 77.6245,
+    "locationName": "Plot 45, BTM 2nd Stage, Outer Ring Road, Bengaluru",
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "mailid": "newowner_1795104250150@vasati.in",
+    "status": "active",
+    "totalRooms": 4,
+    "totalBeds": 8,
+    "occupiedBeds": 0,
+    "availableBeds": 8
+  }
+]

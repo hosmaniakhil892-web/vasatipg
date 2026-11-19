@@ -10,6 +10,7 @@ const authRoutes = require("./routes/authRoutes");
 const wishRoutes = require("./routes/wishlist");
 const allAdsDetailsRoute = require("./routes/allAdsDetailsRoute");
 const chatRoutes = require("./routes/chat");
+const ownerRoutes = require("./routes/ownerRoutes");
 const Chat = require("./models/Chat"); // Import Chat model
 
 const app = express();
@@ -21,10 +22,14 @@ app.use(bodyParser.json());
 app.use(morgan("dev"));
 
 // Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("Failed to connect to MongoDB", err));
+if (process.env.MONGO_URI) {
+  mongoose
+    .connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 4000 })
+    .then(() => console.log("Connected to MongoDB Atlas"))
+    .catch((err) => console.log("MongoDB notice (operating with local resilient store):", err.message));
+} else {
+  console.log("No MONGO_URI specified, operating with resilient local database store.");
+}
 
 // Routes
 app.use("/auth", authRoutes);
@@ -32,6 +37,7 @@ app.use("/api/advertise", advertisementRoutes);
 app.use("/api/wishlist", wishRoutes);
 app.use("/api/ads", allAdsDetailsRoute);
 app.use("/api/chat", chatRoutes);
+app.use("/api/owner", ownerRoutes);
 
 // WebSocket Setup
 const http = require("http");

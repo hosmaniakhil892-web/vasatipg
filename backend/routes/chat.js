@@ -1,45 +1,63 @@
 const express = require("express");
 const router = express.Router();
 const Chat = require("../models/Chat");
-
+const dbService = require("../services/dbService");
 
 router.get("/conversations/:userEmail", async (req, res) => {
-       console.log("Hi");
-        const userEmail = req.params.userEmail;
-        console.log("Fetching conversations for:", userEmail); // Debug log
-    
-        try {
-            const messages = await Chat.find({
-                $or: [{ senderEmail: userEmail }, { receiverEmail: userEmail }]
-            }).sort({ timestamp: -1 });
-    
-            console.log("Raw Messages:", messages); // Debugging output
-    
-            let uniqueConversations = new Map();
-            messages.forEach((msg) => {
-                const otherUser = msg.senderEmail === userEmail ? msg.receiverEmail : msg.senderEmail;
-                if (!uniqueConversations.has(otherUser)) {
-                    uniqueConversations.set(otherUser, msg);
-                }
-            });
-    
-            const conversationsArray = Array.from(uniqueConversations.values());
-            console.log("Final Conversations:", conversationsArray); // Debugging output
-    
-            res.json(conversationsArray);
-        } catch (error) {
-            console.error("Error fetching conversations:", error);
-            res.status(500).json({ error: "Internal Server Error" });
-        }
+  const userEmail = req.params.userEmail;
+
+  try {
+    let messages = [];
+    if (dbService.isMongoConnected()) {
+      messages = await Chat.find({
+        $or: [{ senderEmail: userEmail }, { receiverEmail: userEmail }],
+      }).sort({ timestamp: -1 });
+    } else {
+      const allChats = dbService.readCollection("chats");
+      messages = allChats
+        .filter((c) => c.senderEmail === userEmail || c.receiverEmail === userEmail)
+        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    }
+
+    let uniqueConversations = new Map();
+    messages.forEach((msg) => {
+      const otherUser = msg.senderEmail === userEmail ? msg.receiverEmail : msg.senderEmail;
+      if (!uniqueConversations.has(otherUser)) {
+        uniqueConversations.set(otherUser, msg);
+      }
     });
+
+    const conversationsArray = Array.from(uniqueConversations.values());
+    res.json(conversationsArray);
+  } catch (error) {
+    console.error("Error fetching conversations:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 // Send a message
 router.post("/send", async (req, res) => {
   const { roomId, senderEmail, receiverEmail, message } = req.body;
 
   try {
-    const chatMessage = new Chat({ roomId, senderEmail, receiverEmail, message, timestamp: new Date() });
-    await chatMessage.save();
+    const chatMessage = {
+      _id: "chat_" + Date.now(),
+      roomId,
+      senderEmail,
+      receiverEmail,
+      message,
+      timestamp: new Date().toISOString(),
+    };
+
+    if (dbService.isMongoConnected()) {
+      const doc = new Chat(chatMessage);
+      await doc.save();
+    } else {
+      const chats = dbService.readCollection("chats");
+      chats.push(chatMessage);
+      dbService.writeCollection("chats", chats);
+    }
+
     res.status(201).json(chatMessage);
   } catch (error) {
     res.status(500).json({ message: "Error sending message", error });
@@ -50,7 +68,15 @@ router.post("/send", async (req, res) => {
 router.get("/:roomId", async (req, res) => {
   try {
     const { roomId } = req.params;
-    const messages = await Chat.find({ roomId }).sort({ timestamp: 1 });
+    let messages = [];
+    if (dbService.isMongoConnected()) {
+      messages = await Chat.find({ roomId }).sort({ timestamp: 1 });
+    } else {
+      const chats = dbService.readCollection("chats");
+      messages = chats
+        .filter((c) => c.roomId === roomId)
+        .sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    }
     res.json(messages);
   } catch (error) {
     console.error("Error fetching messages:", error);
@@ -62,11 +88,17 @@ router.get("/:roomId", async (req, res) => {
 router.get("/user/:email", async (req, res) => {
   try {
     const userEmail = req.params.email;
-
-    const chats = await Chat.find({
-      $or: [{ senderEmail: userEmail }, { receiverEmail: userEmail }],
-    }).sort({ timestamp: -1 });
-
+    let chats = [];
+    if (dbService.isMongoConnected()) {
+      chats = await Chat.find({
+        $or: [{ senderEmail: userEmail }, { receiverEmail: userEmail }],
+      }).sort({ timestamp: -1 });
+    } else {
+      const allChats = dbService.readCollection("chats");
+      chats = allChats
+        .filter((c) => c.senderEmail === userEmail || c.receiverEmail === userEmail)
+        .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    }
     res.status(200).json(chats);
   } catch (error) {
     res.status(500).json({ message: "Error fetching chats", error });
@@ -77,21 +109,28 @@ router.get("/user/:email", async (req, res) => {
 router.get("/:senderEmail/:receiverEmail", async (req, res) => {
   try {
     const { senderEmail, receiverEmail } = req.params;
-
-    const messages = await Chat.find({
-      $or: [
-        { senderEmail, receiverEmail },
-        { senderEmail: receiverEmail, receiverEmail: senderEmail },
-      ],
-    }).sort({ timestamp: 1 });
-
+    let messages = [];
+    if (dbService.isMongoConnected()) {
+      messages = await Chat.find({
+        $or: [
+          { senderEmail, receiverEmail },
+          { senderEmail: receiverEmail, receiverEmail: senderEmail },
+        ],
+      }).sort({ timestamp: 1 });
+    } else {
+      const allChats = dbService.readCollection("chats");
+      messages = allChats
+        .filter(
+          (c) =>
+            (c.senderEmail === senderEmail && c.receiverEmail === receiverEmail) ||
+            (c.senderEmail === receiverEmail && c.receiverEmail === senderEmail)
+        )
+        .sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    }
     res.status(200).json(messages);
   } catch (error) {
     res.status(500).json({ message: "Error fetching messages", error });
   }
 });
-
-
-
 
 module.exports = router;
